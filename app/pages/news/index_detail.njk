@@ -1,0 +1,45 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "お知らせ記事" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "news_detail" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower hero-lower--thin">
+    <h1 class="heading-primary hero-lower__ttl">お知らせ</h1>
+  </div>
+  <div class="news-detail-container">
+    <div class="news-detail">
+      <div class="news-detail__date">2020.1.1</div>
+      <h2 class="heading-secondary news-detail__ttl">タイトル</h2>
+      <div class="news-detail__wrap">
+        <div class="news-detail__txtbox">
+          <p class="news-detail__txt">
+            
+            ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。
+          </p>
+          <p class="news-detail__txt">
+            ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。ここにはお知らせの内容が入ります。</p>
+        </div>
+        <div class="news-detail__bottom-btn">
+          <a href="/news/" class="btn-primary news-content__bottom-link">前のページに戻る</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

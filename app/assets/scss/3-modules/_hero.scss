@@ -1,0 +1,48 @@
+/*
+  ----------------
+  Hero
+  ----------------
+*/
+
+.hero-lower {
+  background: 50% 100% / cover no-repeat;
+  display: table;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -10;
+  }
+
+  @media #{$pc} {
+    height: 340px;
+  }
+  @media #{$sp} {
+    margin-top: 58px;
+    height: 19vh;
+  }
+
+  h1 {
+    line-height: 1;
+
+    @media #{$sp} {
+      padding: 0 30px;
+    }
+  }
+
+  &__ttl {
+    display: table-cell;
+    vertical-align: middle;
+    @media #{$pc} {
+    }
+  }
+}

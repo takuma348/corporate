@@ -1,0 +1,33 @@
+/*
+  ----------------
+  ユーティリティー
+  ----------------
+*/
+
+// .container {
+//   @include container;
+// }
+
+.clearfix {
+  @include clearfix;
+}
+
+/*
+  ----------------
+  レスポンシブ用のユティリティー
+  ----------------
+*/
+
+.sp-only {
+  @media #{$pc} {
+    display: none !important;
+  }
+}
+
+
+.pc-only {
+  @media #{$sp} {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,40 @@
+/*
+  ----------------
+  主な取り扱い商品
+  ----------------
+*/
+
+.product-list {
+  max-width: 980px;
+  @include margin(null auto);
+  @include padding(80px null 70px);
+
+  &__ttl {
+    margin-bottom: .8em;
+  }
+
+  &__toptxt {
+    font-size: 14px;
+    padding-bottom: 1.5em;
+    text-align: center;
+    display: block;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    width: 31%;
+    &:not(:nth-of-type(3n)) {
+      margin-right: 30px;
+    }
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    min-width: 307px;
+    @include hoverlink;
+  }
+}

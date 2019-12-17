@@ -1,0 +1,155 @@
+/*
+  ----------------
+  news-detailページ
+  ----------------
+*/
+
+body.news_detail {
+  p {
+    margin-bottom: 0;
+  }
+
+  .hero-lower {
+    background-image: url(../img/news/hero_detail.jpg);
+  }
+
+  .news-detail-container {
+    max-width: 980px;
+    @include margin(null auto 70px);
+    @media #{$sp} {
+      margin-bottom: 0;
+    }
+  }
+
+  .news-detail {
+    max-width: 980px;
+    @include margin(null auto);
+    @include padding(80px 20px 50px 20px);
+    margin-bottom: 80px;
+    
+    @media #{$pc} {
+      @include padding(80px 55px 50px);
+    }
+    @media #{$sp} {
+      margin-bottom: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-bottom: none;
+    }
+
+    &__date {
+      color: $primary-color;
+      font-weight: 400;
+      min-width: 5.5em;
+      text-align: right;
+    }
+
+    &__ttl {
+      @media #{$sp} {
+        text-align: left;
+        margin: 2rem 0;
+        @include subtitle;
+      }
+      img {
+        width: 811px;
+        height: 28px;
+      }
+    }
+
+    &__imgbox {
+      width: 42%;
+      height: auto;
+      background-position: 50% 0%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    &__txtbox {
+      display: flex;
+      flex-wrap: wrap;
+      
+      @media #{$pc} {
+        padding-left: 30px;
+      }
+    }
+
+    &__txt,
+    &__wrap p {
+      line-height: 2;
+      font-weight: normal;
+
+      &:not(:last-of-type) {
+        margin-bottom: 2em;
+      }
+    }
+
+    &__bottom-box {
+      display: flex;
+      max-width: 980px;
+      @include margin(null auto 50px);
+      justify-content: space-between;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__bottom-box-item {
+      width: 50%;
+      &--next {
+        margin-left: auto;
+        text-align: right;
+      }
+    }
+
+    &__box-link-back {
+      position: relative;
+      padding-left: 35px;
+      color: inherit;
+      &:before {
+        content: '<';
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        @include hoverlink;
+      }
+    }
+
+    &__box-link-next {
+      position: relative;
+      padding-right: 35px;
+      color: inherit;
+      &:before {
+        content: '>';
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        @include hoverlink;
+      }
+    }
+
+    &__bottom-btn {
+      text-align: center;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.news-content {
+  &__bottom-btn {
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+}

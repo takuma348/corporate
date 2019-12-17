@@ -1,0 +1,71 @@
+/* Color */
+$body-color: #444;
+$primary: #41aa92;
+$secondary: #f27200;
+$danger: #e60012;
+$info: #bfbfbf;
+
+$body-bg: #fdfdfd;
+
+/* Link */
+$link-hover-decoration: 'none';
+
+/* Button */
+$btn-line-height: 3.5;
+$btn-font-size: 1rem;
+$btn-border-radius: 0;
+$input-btn-padding-x: 1.05rem;
+$btn-padding-y: 1rem;
+$btn-padding-x: 3.38rem;
+$btn-border-radius-lg: 0;
+$btn-font-size-lg: 1rem;
+$btn-padding-y-lg: 1em;
+$btn-padding-x-lg: 3.38em;
+$btn-border-radius-sm: 0;
+$btn-font-size-sm: .9375rem;
+$btn-padding-y-sm: .25rem;
+$btn-padding-x-sm: 1rem;
+
+/* Typography */
+$enable-responsive-font-sizes: true;
+$font-size-base: 0.875rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.625rem;
+$h5-font-size: 1.125rem;
+$small-font-size: 75%;
+$line-height-base: 1.857;
+
+$font-family-sans-serif: 'Noto Sans JP', sans-serif;
+
+/* Card */
+$card-border-width: 0;
+$card-border-radius: 0;
+
+/* Shadow */
+$box-shadow: 0 10px 10px rgba(#000, .1);
+
+/* Badge */
+$badge-border-radius: 0;
+
+/* Spacer */
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.375),
+    5: ($spacer * 2)
+  ),
+  $spacers
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1010px
+)

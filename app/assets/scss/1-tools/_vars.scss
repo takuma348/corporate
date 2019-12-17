@@ -1,0 +1,43 @@
+// Breakpoint設定
+
+$sp: "all and (max-width : 767px)";
+
+$pc: "all and (min-width: 768px)";
+
+// Font-family
+@font-face {
+  font-family: "Dinot";
+  src: url('../font/DINOT-Bold.otf') format("opentype");
+  font-weight: 400;
+}
+
+$font-family: $font-family-sans-serif;
+$font-en: 'Dinot', $font-family-sans-serif;
+$font-kan: 'kan415typos-std', sans-serif;
+
+// カラー
+
+$primary-color: #2c9cff;
+$secondary-color: $secondary;
+
+$tertiary-color: #eee;
+
+$color-exhibition: #4175aa;
+$color-supplier: #aa7041;
+$color-recruit: #aa4155;
+$color-font: #232323;
+
+// テキストカラー
+$title-white: #fff;
+$font-color: #232323;
+
+
+// コンテナー設定
+
+$container: 1020px;
+
+// グリッド設定
+
+$gutter: 20px;
+$small-gutter: 10px;
+

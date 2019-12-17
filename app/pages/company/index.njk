@@ -1,0 +1,82 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "会社概要" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "lower company" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower">
+    <h1 class="heading-primary hero-lower__ttl">会社概要</h1>
+  </div>
+  <div class="company-content">
+    <div class="company-content__container">
+      <h2 class="heading-secondary">タイトル</h2>
+      <div class="company-content__top-box">
+        <ul>
+          <li class="company-content__top-wrap">
+            <div class="item"><p>会社名</p></div>
+            <div class="detail"><p>○○○○株式会社</p></div>
+          </li>
+          <li class="company-content__top-wrap">
+            <div class="item"><p>代表者</p></div>
+            <div class="detail">
+              <p>代表締役　○○○○</p>
+            </div>
+          </li>
+          <li class="company-content__top-wrap">
+            <div class="item">
+              <p>設　立</p>
+            </div>
+            <div class="detail">
+              <p>平成◯年◯月◯◯日</p>
+            </div>
+          </li>
+          <li class="company-content__top-wrap">
+            <div class="item"><p>所在地</p></div>
+            <div class="detail">
+              <div class="place">
+                <p class="place-item">本　　社</p>
+                <p class="place-detail">
+                  〒000-0000<br>
+                  東京都◯◯区◯◯◯1丁目1番1号<br>
+                  電話（03）0000-0000</p>
+              </div>
+              <div class="place">
+                <p class="place-item">◯◯支店</p>
+                <p class="place-detail">
+                  〒000-0000<br>
+                  東京都◯◯区◯◯◯1丁目1番1号<br>
+                  電話（03）0000-0000</p>
+              </div>
+            </div>
+          </li>
+          <li class="company-content__top-wrap">
+            <div class="item"><p>資本金</p></div>
+            <div class="detail"><p>1,000万円</p></div>
+          </li>
+          <li class="company-content__top-wrap">
+            <div class="item"><p>事業内容</p></div>
+            <div class="detail">
+              <p>ここにはテキストが入ります。<br class="pc-only">ここにはテキストが入ります。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

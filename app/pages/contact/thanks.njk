@@ -1,0 +1,42 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "お問い合わせ" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "contact" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower hero-lower">
+    <h1 class="heading-primary hero-lower__ttl">お問い合わせ</h1>
+  </div>
+  <section class="section">
+    <div class="container contact-content">
+      <p class="contact-content__read">
+        送信ありがとうございました。<br/>
+        送信は正常に完了しました。
+      </p>
+      <div class="contact-content__wrap">
+        <div class="contact-container">
+          <div class="form__btn">
+            <a href="/" class="form__submit btn-primary form__btn-link">戻る</a>
+          </div>
+        </div>
+      </div><!-- /*contact-container -->
+
+    </div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,89 @@
+/*
+  ----------------
+  service
+  ----------------
+*/
+
+
+.hero-lower {
+  background-image: url(../img/service/hero.jpg);
+
+}
+
+.service {
+
+  .container {
+    padding: 5vmin 0;
+  }
+
+  @media #{$pc} {
+    padding: 80px 0 40px;
+  }
+
+  &__ttl {
+    font-size: 3.5rem;
+    
+    @media #{$sp} {
+      padding-top: 2rem;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__ttl-txt {
+    @media #{$pc} {
+      margin: 40px 0 60px;
+    }
+    @media #{$sp} {
+      margin: 20px 5vmin 30px;
+    }
+  }
+}
+.service-box {
+
+  @media #{$sp} {
+    +.service-box {
+      margin-top: 3rem;
+    }
+  }
+  &__ttl {
+   font-size: 2.5rem; 
+  }
+  &-wrap {
+    background: #eaf5f2;
+    @media #{$pc} {
+      height: 100%;
+    }
+  }
+  @media #{$pc} {
+    margin-bottom: 30px;
+  }
+  @media #{$sp} {
+    margin-top: 15px;
+  }
+  &__inner {
+    @media #{$pc} {
+      padding: 40px 34px;
+    }
+    @media #{$sp} {
+      padding: 20px;
+    }
+  }
+  &__img {
+    @media #{$pc} {
+      width: 100%;
+    }
+
+    @media #{$sp} {
+      margin: auto calc(((100vw - 100%) / 2) * -1);
+      max-width: none;
+    }
+  }
+  &__txt {
+    @media #{$pc} {
+      margin: 30px 0 40px;
+    }
+    @media #{$sp} {
+      margin: 15px 0 20px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+/*
+  ----------------
+  ボタン
+  ----------------
+*/
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2em;
+  justify-content: center;
+  background-color: $primary-color;
+  transition: all .3s ease;
+  color: #fff;
+
+  @media #{$pc} {
+    min-width: 180px;
+    height: 50px;
+    margin-top: 1rem;
+
+    &:hover {
+      letter-spacing: .3em;
+      color: #fff;
+      opacity: .6;
+    }
+  }
+  @media #{$sp} {
+    min-width: 220px;
+    min-height: 40px;
+    margin: 3rem auto 1rem;
+  }
+
+  &.is-invert {
+    background-color: #fff;
+    color: $primary-color;
+  }
+
+  &.is-bg-secondary {
+    background-color: $primary-color;
+  }
+
+  &.is-m {
+    @media #{$pc} {
+      min-width: 262px;
+    }
+  }
+
+  &.is-l {
+    min-width: 370px;
+  }
+
+  &.is-ss {
+    min-width: 180px;
+  }
+}

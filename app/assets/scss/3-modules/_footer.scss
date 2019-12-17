@@ -1,0 +1,276 @@
+/*
+  ----------------
+  フッタースタイル設定
+  ----------------
+*/
+
+footer.footer {
+  position: relative;
+
+  a {
+    color: #fff;
+    
+    @media #{$pc} {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  ul {
+    margin-bottom: 0;
+  }
+
+  .container {
+    @media #{$sp} {
+      padding: 0 5vmin;
+    }
+  }
+  
+  background: $primary-color;
+  color: #fff;
+  @media #{$pc} {
+  }
+
+  .goTop {
+    position: fixed;
+    bottom: 30px;
+    border-radius: 50%;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b8b8b8;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    transition: .3s;
+
+    &:before {
+      content: '';
+      background: url(../img/common/pagetop_arrow.svg) no-repeat center / contain;
+    }
+
+    @media #{$pc} {
+      width: 80px;
+      height: 80px;
+      z-index: -1;
+      @include hoverlink;
+
+      &:before {
+        width: 38px;
+        height: 19px;
+      }
+    }
+    @media #{$sp} {
+      display: none;
+    }
+  }
+
+  .footer-info {
+    p {
+      margin-bottom: 0;
+    }
+
+    @media #{$pc} {
+      padding: 45px 0;
+      background-color: rgba(#000, 0.1);
+    }
+    @media #{$sp} {
+      padding: 1rem;
+    }
+
+    .navbar-brand {
+
+      @media #{$pc} {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      @media #{$sp} {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+      }
+
+      &__logo {
+        font-weight: bold;
+        line-height: 1;
+        font-size: 3.5rem;
+        @include hoverlink;
+
+        @media #{$sp} {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .footer-address {
+      @media #{$pc} {
+        margin-top: 0.8em;
+        display: flex;
+        flex-direction: column;
+      }
+      &__item {
+        max-width: 800px;
+        @media #{$pc} {
+          font-size: 1.5rem;
+          line-height: 2em;
+          display: flex;
+          flex-wrap: wrap;
+          *:not(:last-child) {
+            margin-right: 1em;
+          }
+          *:nth-child(3) {
+            margin-left: auto;
+          }
+        }
+        @media #{$sp} {
+          margin-bottom: 1rem;
+          *:nth-child(3) {
+            float: left;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+
+    .footer-copy {
+      opacity: 0.7;
+      @media #{$pc} {
+        margin-top: 0.5em;
+        font-size: 0.75rem;
+      }
+      @media #{$sp} {
+        font-size: 1rem;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.contact-banner {
+  background: #efefef;
+
+  .home & {
+    background: #fff;
+    
+    @media #{$sp} {
+      position: relative;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+
+  &__container {
+    max-width: 980px;
+    @include margin(null auto);
+    @include padding(80px 20px);
+    @media #{$sp} {
+      @include padding(40px 20px);
+    }
+  }
+
+  &__box {
+    margin-bottom: 40px;
+    text-align: center;
+    @media #{$sp} {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box-ttl {
+    color: #002C79;
+    font-size: 4rem;
+    font-family: 'Open Sans',
+    sans-serif;
+    text-align: center;
+
+    @media #{$sp} {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__wrap {
+    @media #{$pc} {
+      display: flex;
+    }
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    @media #{$pc} {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+        &:not(:last-of-type) {
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 85px;
+          width: 1px;
+          background: #cecece;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+    @media #{$sp} {
+      margin-top: 2rem;
+    }
+
+    
+  }
+
+  &__item-ttl {
+    font-weight: bold;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    font-size: 2rem;
+
+    @media #{$sp} {
+      font-size: 2rem;
+      padding-bottom: 0;
+    }
+  }
+
+  &__item-link {
+    width: 320px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__item-adress {
+    text-align: left;
+    font-weight: bold;
+
+    @media #{$sp} {
+      margin-top: 1rem;
+    }
+  }
+}
+
+footer.footer.is-scrolled .goTop {
+
+  @media #{$pc} { 
+    opacity: 1;
+    transition: .3s;
+    z-index: 10;
+  }
+
+}

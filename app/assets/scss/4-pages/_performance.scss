@@ -1,0 +1,83 @@
+/*
+  ----------------
+  spplierページ
+  ----------------
+*/
+
+body.performance {
+  p {
+    margin-bottom: 0;
+  }
+
+  .hero-lower {
+    background-image: url(../img/supplier/hero.jpg);
+
+    &--detail {
+      background-image: url(../img/supplier/hero_detail.jpg);
+    }
+  }
+
+  .supplier-content {
+    background: url(../img/top/region_bg.png) 50% / 50% repeat fixed;
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media #{$sp} {
+      padding: 0 20px;
+      margin: 0;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 25px;
+      max-width: 980px;
+      margin: 120px auto 90px;
+
+      @media #{$sp} {
+        margin: 30px auto;
+        padding: 0;
+      }
+    }
+
+    &__item {
+      background: #fff;
+      border-radius: 10px;
+      width: 48%;
+      margin-bottom: 30px;
+      list-style: none;
+      padding: 30px;
+
+      &:nth-of-type(odd) {
+        margin-right: auto;
+      }
+
+      @media #{$sp} {
+        width: 100%;
+        &:nth-of-type(odd) {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    &__ttl {
+      font-size: 20px;
+      margin-bottom: 1em;
+    }
+
+    &__txt {
+      font-size: 14px;
+      margin-bottom: 2em;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      @media #{$pc} {
+        height: 11rem;
+        overflow: hidden;
+      }
+    }
+
+    &__btn {
+      text-align: center;
+    }
+  }
+}

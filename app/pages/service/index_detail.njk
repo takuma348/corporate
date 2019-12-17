@@ -1,0 +1,44 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "サービス詳細" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "business_detail" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower hero-lower--thin">
+    <h1 class="heading-primary hero-lower__ttl">サービス概要</h1>
+  </div>
+  <div class="business-detail-container">
+    <div class="business-detail">
+      <h2 class="heading-secondary business-detail__ttl">タイトル</h2>
+      <div class="business-detail__txtbox">
+        <div class="business-detail__wrap">
+          <h3 class="heading-tertiary">タイトル</h3>
+          <p class="business-detail__txt">
+            ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+          </p>
+          <h3 class="heading-tertiary">タイトル</h3>
+          <p class="business-detail__txt">
+            ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+            ここにはテキストが入ります。ここにはテキストが入ります。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

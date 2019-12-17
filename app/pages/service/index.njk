@@ -1,0 +1,79 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "サービス" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "lower recruite" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+  <div class="hero-lower">
+    <h1 class="heading-primary hero-lower__ttl">サービス</h1>
+  </div>
+
+  <section class="service">
+    <div class="container">
+      <h2 class="service__ttl text-center">タイトル</h2>
+      <p class="service__ttl-txt text-center">
+        ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+      </p>
+      <div class="row">
+        <div class="col-md-6 service-box">
+          <img class="service-box__img" src="/assets/img/service/service_img01.jpg" alt="">
+          <div class="service-box__inner">
+            <h3 class="service-box__ttl text-center">タイトル</h3>
+            <p class="service-box__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+            <div class="supplier-content__btn text-center">
+              <a href="/service/index_detail.html" class="btn-primary">もっと見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 service-box">
+          <img class="service-box__img" src="/assets/img/service/service_img02.jpg" alt="">
+          <div class="service-box__inner">
+            <h3 class="service-box__ttl text-center">タイトル</h3>
+            <p class="service-box__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+            <div class="supplier-content__btn text-center">
+              <a href="/service/index_detail.html" class="btn-primary">もっと見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 service-box">
+          <img class="service-box__img" src="/assets/img/service/service_img03.jpg" alt="">
+          <div class="service-box__inner">
+            <h3 class="service-box__ttl text-center">タイトル</h3>
+            <p class="service-box__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+            <div class="supplier-content__btn text-center">
+              <a href="/service/index_detail.html" class="btn-primary">もっと見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 service-box">
+          <img class="service-box__img" src="/assets/img/service/service_img04.jpg" alt="">
+          <div class="service-box__inner">
+            <h3 class="service-box__ttl text-center">タイトル</h3>
+            <p class="service-box__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+            <div class="supplier-content__btn text-center">
+              <a href="/service/index_detail.html" class="btn-primary">もっと見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

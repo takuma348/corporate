@@ -1,0 +1,173 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "トップページ" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "home" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<div class="hero">
+  <h1 class="hero__text" data-aos="fade-in" data-aos-duration="3000">Well come to my<br class="sp-only"> portfolio</h1>
+  <div class="hero__scroll">
+    <span class="hero__border"></span>
+    <span class="hero__disc"></span>
+  </div>
+</div>
+
+<main>
+
+  <section class="section top-region">
+    <div class="container"> 
+      <h2 class="section__title top-region__title" data-aos="fade-up">SERVICE</h2>
+      <p class="section__title-sub" data-aos="fade-up">サービス</p>
+      <p class="mb-md-4 mb-5 text-md-center" data-aos="fade-up">ここにはテキストが入ります。ここにはテキストが入ります。<br>
+        ここにはテキストが入ります。ここにはテキストが入ります。</p>
+      <div class="row mb-3">
+        <div class="top-region__item col-md-6">
+          <div class="top-region__img mb-md-3 mb-2">
+            <img class="" src="/assets/img/top/region_img01.jpg" alt="" data-aos="fade-in">
+          </div>
+          <div class="" data-aos="fade-right">
+            <h3 class="top-region__subtitle mb-2">タイトル</h3>
+            <p class="top-region__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+          </div>
+        </div>
+        <div class="top-region__item col-md-6">
+          <div class="top-region__img mb-md-3 mb-2">
+            <img class="" src="/assets/img/top/region_img02.jpg" alt="" data-aos="fade-in">
+          </div>
+          <div class="" data-aos="fade-left">
+            <h3 class="top-region__subtitle mb-2">タイトル</h3>
+            <p class="top-region__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+          </div>
+        </div>
+        <div class="top-region__item col-md-6">
+          <div class="top-region__img mb-md-3 mb-2">
+            <img class="" src="/assets/img/top/region_img03.jpg" alt="" data-aos="fade-in">
+          </div>
+          <div class="" data-aos="fade-right">
+            <h3 class="top-region__subtitle mb-2">タイトル</h3>
+            <p class="top-region__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+          </div>
+        </div>
+        <div class="top-region__item col-md-6">
+          <div class="top-region__img mb-md-3 mb-2">
+            <img class="" src="/assets/img/top/region_img04.jpg" alt="" data-aos="fade-in">
+          </div>
+          <div class="" data-aos="fade-left">
+            <h3 class="top-region__subtitle mb-2">タイトル</h3>
+            <p class="top-region__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0 text-center">
+        <a href="/service/" class="btn-primary is-m">もっと見る</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section top-case">
+    <div class="container">
+      <h2 class="section__title top-case__title" data-aos="fade-up">PERFORMANCE</h2>
+      <p class="section__title-sub" data-aos="fade-up">実績紹介</p>
+      <div class="row">
+        <div class="col-md-4 top-case__item" data-aos="fade-in">
+          <h3 class="top-case__subtitle mb-md-3 mb-2">〇〇〇〇社</h3>
+          <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+          </p>
+          <p class="top-case__btn mb-0">
+            <a href="/performance/" class="btn-primary">詳細を見る</a>
+          </p>
+        </div>
+        <div class="col-md-4 top-case__item" data-aos="fade-in" data-aos-delay="150">
+          <h3 class="top-case__subtitle mb-md-3 mb-2">〇〇〇〇社</h3>
+          <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+          </p>
+          <p class="top-case__btn mb-0">
+            <a href="/performance/" class="btn-primary">詳細を見る</a>
+          </p>
+        </div>
+        <div class="col-md-4 top-case__item" data-aos="fade-in" data-aos-delay="300">
+          <h3 class="top-case__subtitle mb-md-3 mb-2">〇〇〇〇社</h3>
+          <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+          </p>
+          <p class="top-case__btn mb-0">
+            <a href="/performance/" class="btn-primary">詳細を見る</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section top-recruit">
+    <div class="top-recruit__bg"></div>
+    <div class="container">
+      <div class="row">
+        <div class="top-recruit__box">
+          <h2 class="section__title top-recruit__title mb-4" data-aos="fade-up">RECRUIT</h2>
+          <p class="section__title-sub" data-aos="fade-up">採用情報</p>
+          <p class="top-supplier__text mb-4" data-aos="fade-in">
+            ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+          <p class="top-recruit__btn mb-0">
+            <a href="/recruit/" class="btn-primary is-bg-secondary">もっと見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section top-news js-top-news" id="news-wrap">
+    <div class="container">
+      <h2 class="section__title top-news__title" data-aos="fade-up">NEWS</h2>
+      <p class="section__title-sub" data-aos="fade-up">お知らせ</p>
+      <div class="top-news-wrap collapse show" data-aos="fade-in">
+        <a href="/news/" class="top-news__item">
+          <div class="top-news__category cat is-news">お知らせ</div>
+          <div class="top-news__date">2020.1.1</div>
+          <p class="top-news__text">
+            ここにはお知らせが入ります。
+          </p>
+        </a>
+        <a href="/news/" class="top-news__item">
+          <div class="top-news__category cat is-news">お知らせ</div>
+          <div class="top-news__date">2020.1.1</div>
+          <p class="top-news__text">
+            ここにはお知らせが入ります。
+          </p>
+        </a>
+        <a href="/news/" class="top-news__item">
+          <div class="top-news__category cat is-news">お知らせ</div>
+          <div class="top-news__date">2020.1.1</div>
+          <p class="top-news__text">
+            ここにはお知らせが入ります。
+          </p>
+        </a>
+        <a href="/news/" class="top-news__item">
+          <div class="top-news__category cat is-news">お知らせ</div>
+          <div class="top-news__date">2020.1.1</div>
+          <p class="top-news__text">
+            ここにはお知らせが入ります。
+          </p>
+        </a>
+      </div>
+      <p class="mb-0 text-center">
+        <a href="/news/" class="btn-primary">もっと見る</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

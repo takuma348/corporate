@@ -1,0 +1,120 @@
+/*
+  ----------------
+  Base styles
+  ----------------
+*/
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media #{$sp} {
+    font-size: 0.75rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@media #{$pc} {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+@media #{$sp} {
+  .container {
+    padding: 3rem 5vmin;
+  }
+}
+
+/*
+  ----------------
+  Base font settings
+  ----------------
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  /* 16px*/
+  line-height: 2;
+}
+
+h1 {
+  font-size: 36px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(1.5rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+
+  /* 1200px以上*/
+  h1 {
+    font-size: 3.6rem;
+    /* 36px*/
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    /* 24px*/
+  }
+
+  h3 {
+    font-size: 2rem;
+    /* 24px*/
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  /* 640px以下*/
+  body {
+    line-height: 2;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    /* 24px*/
+  }
+
+  h2 {
+    font-size: 2rem;
+    /* 20px*/
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    /* 15px*/
+  }
+}

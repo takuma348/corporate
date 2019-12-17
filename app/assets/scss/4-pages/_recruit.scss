@@ -1,0 +1,96 @@
+/*
+  ----------------
+  recruit
+  ----------------
+*/
+
+body.recruit {
+  p {
+    margin-bottom: 0;
+  }
+
+  .hero-lower {
+    background-image: url(../img/recruit/hero.jpg);
+
+    @media #{$pc} {
+    }
+  }
+
+  .recruit {
+    @media #{$pc} {
+    position: relative;
+    background: url(../img/common/lower_bg.jpg) 50% / cover no-repeat;
+    z-index: 0;
+    
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.94);
+        z-index: -10;
+      }
+    }
+
+    &__wrap {
+      max-width: 980px;
+      @include margin(null auto);
+      padding: 80px 5vmin;
+
+      @media #{$sp} {
+        padding: 40px 5vmin;
+      }
+    }
+
+    &__info {
+      background: #fff;
+      border-top: 3px solid #002C79;
+      margin-top: 10px;
+
+      @media #{$sp} {
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+      }
+
+      dl {
+        display: flex;
+        border-bottom: 1px solid #acacac;
+        margin: 0;
+      }
+
+      dt {
+        display: inline-block;
+        margin: auto 0;
+        padding: 20px 10px;
+        width: 150px;
+        background-color: #dbdbdb;
+
+        @media #{$sp} {
+          margin: 0;
+        }
+      }
+
+      dd {
+        display: inline-block;
+        margin: auto 0;
+        padding-left: 15px;
+        width: 550px;
+        line-height: 1.7;
+
+        @media #{$sp} {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    &__subttl {
+      img {
+        height: 19px;
+      }
+      margin-bottom: 0.6em;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+/*
+  ----------------
+  business_detail
+  ----------------
+*/
+
+body.business_detail {
+  
+  p {
+    margin-bottom: 0;
+  }
+
+  .hero-lower {
+    @media #{$pc} {
+      background-image: url(../img/service/detail_hero.jpg);
+    }
+  }
+
+  .business-detail-container {
+    position: relative;
+    background: url(../img/top/top-case_bg.jpg) 50% / cover no-repeat;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: -10;
+    }
+
+    @media #{$sp} {
+      padding: 40px 20px;
+    }
+  }
+
+  .business-detail {
+    max-width: 980px;
+    @include margin(null auto);
+    @include padding(80px 20px 50px 20px);
+    @media #{$pc} {
+      @include padding(80px 55px 50px);
+    }
+    @media #{$sp} {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    &__ttl {
+      @media #{$sp} {
+        font-size: 2.5rem;
+      }
+    }
+
+    .img-box {
+      margin-bottom: 75px;
+    }
+    &__wrap {
+      margin-bottom: 120px;
+      @media #{$sp} {
+        margin-bottom: 40px;
+      }
+    }
+    &__img-box {
+      height: 180px;
+      background-position: 50% 0%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+    &__txtbox {
+      @include padding(null 55px);
+
+      @media #{$sp} {
+        padding: 0;
+      }
+    }
+
+    &__txt {
+      line-height: 2;
+      font-weight: normal;
+      &:not(:last-of-type) {
+        margin-bottom: 2em;
+      }
+    }
+
+    &__bottom-box {
+      display: flex;
+      max-width: 980px;
+      @include margin(null auto 50px);
+      justify-content: space-between;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__box-link-back {
+      position: relative;
+      padding-left: 35px;
+      color: inherit;
+      @media #{$sp} {
+        padding-left: 15px;
+      }
+      &:before {
+        content: '<';
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        @include hoverlink;
+      }
+    }
+
+    &__box-link-next {
+      position: relative;
+      padding-right: 35px;
+      color: inherit;
+      @media #{$sp} {
+        padding-right: 15px;
+      }
+      &:before {
+        content: '>';
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        @include hoverlink;
+      }
+    }
+
+    &__bottom-btn {
+      text-align: center;
+    }
+  }
+}

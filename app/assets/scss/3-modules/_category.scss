@@ -1,0 +1,21 @@
+/*
+  ----------------
+  カテゴリー
+  ----------------
+*/
+
+.cat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  @media #{$pc} {
+    height: 29px;
+  }
+
+  &.is-news {
+    background-color: #002C79;
+  }
+  
+}

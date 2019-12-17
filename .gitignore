@@ -1,0 +1,16 @@
+dist
+node_modules
+package-lock.json
+.logs
+wp/wp-config.php
+wp/wp-content/themes/toakasei/assets/*
+wp-config-sample.php
+wp
+index.php
+db
+# ai1wm-backups
+# all-in-one-wp-migration
+wordpress-importer
+# duplicate-post
+contact-form-7
+cf7-conditional-fields

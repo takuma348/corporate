@@ -1,0 +1,43 @@
+//  @import のみが入ります
+
+// 1 - Tools
+@import '1-tools/aos/aos';
+@import '1-tools/bourbon/bourbon';
+@import '1-tools/neat/neat';
+@import '1-tools/bootstrap-vars';
+@import '1-tools/bootstrap/bootstrap';
+@import '1-tools/vars';
+@import '1-tools/normalize';
+@import '1-tools/mixins';
+@import '1-tools/swiper';
+// @import '1-tools/colorbox';
+
+// 2 - Basics
+@import '2-basics/base';
+@import '2-basics/selection-colors';
+// @import '2-basics/typography';
+@import '2-basics/utility';
+@import '2-basics/animation';
+
+// 3 - Modules
+@import '3-modules/header';
+@import '3-modules/footer';
+@import '3-modules/heading';
+@import '3-modules/breadcrumb';
+@import '3-modules/button';
+@import '3-modules/category';
+@import '3-modules/hero';
+@import '3-modules/product-list';
+
+// 4 - pages
+@import '4-pages/company';
+@import '4-pages/contact';
+@import '4-pages/lower';
+@import '4-pages/news';
+@import '4-pages/news_detail';
+@import '4-pages/performance';
+@import '4-pages/performance_detail';
+@import '4-pages/index';
+@import '4-pages/recruit';
+@import '4-pages/service';
+@import '4-pages/service_detail';

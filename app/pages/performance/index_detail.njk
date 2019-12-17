@@ -1,0 +1,38 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "〇〇〇社" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "performance-detail" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower">
+    <h1 class="heading-primary hero-lower__ttl">実績詳細</h1>
+  </div>
+  <div class="performance-detail-content">
+    <div class="performance-detail-content__wrap">
+      <h2 class="heading-secondary">〇〇〇〇社</h2>
+      <div class="performance-detail-content__txtbox">
+        <h3 class="performance-detail-content__subttl">タイトル</h3>
+        <p class="performance-detail-content__txt">
+          ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。<br>
+          ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

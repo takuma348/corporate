@@ -1,0 +1,129 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "お問い合わせ" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "contact" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <div class="hero-lower hero-lower">
+    <h1 class="heading-primary hero-lower__ttl">お問い合わせ</h1>
+  </div>
+  <section class="section">
+    <div class="container contact-content">
+      <p class="contact-content__read">
+        お問い合わせは以下フォームよりお気軽にご連絡ください。
+      </p>
+      <div class="contact-content__wrap">
+        <div class="contact-container">
+
+          <form action="../mail.php" method="post" class="form">
+            <div class="form__content">
+              <dl class="form__row">
+                <dt>
+                  <label for="user_name" class="form__label form__label--req">お名前</label>
+                </dt>
+                <div class="form__wrap">
+                  <dd class="form__input">
+                    <input id="user_name" name="" type="text" name="user_name" required="required">
+                  </dd>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="post_number" class="form__label form__label--req">郵便番号</label>
+                </dt>
+                <div class="form__wrap">
+                  <div class="form__wrap-inner">
+                    <dd class="form__input form__input--post">
+                      <input id="post_number" name="post_number" type="text" class="form__input-post" required="required">
+                    </dd>
+                  </div>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="address1" class="form__label form__label--req">ご住所</label>
+                  <label for="address2" class="form__label form__label--none"></label>
+                </dt>
+                <div class="form__wrap">
+                  <dd class="form__input">
+                    <input id="address1" name="address1" type="text" required="required">
+                    <span class="ex-txt">例）東京都〇〇区</span>
+                    <input id="address2" name="address2" type="text" required="required">
+                    <span class="ex-txt">例）1丁目1番1号〇〇ビル1階</span>
+                  </dd>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="fax" class="form__label">FAX</label>
+                </dt>
+                <div class="form__wrap">
+                  <dd class="form__input form__input--small">
+                    <input id="fax" name="fax" type="phone">
+                    <span class="ex-txt">例）03-0000-0000</span>
+                  </dd>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="phone" class="form__label form__label--req">お電話番号</label>
+                </dt>
+                <div class="form__wrap">
+                  <dd class="form__input form__input--small">
+                    <input id="phone" name="phone" type="phone" required="required">
+                    <span class="ex-txt">例）03-0000-0000</span>
+                  </dd>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="email" class="form__label form__label--req">メールアドレス</label>
+                </dt>
+                <div class="form__wrap">
+                  <div class="form__wrap-inner">
+                    <dd class="form__input form__input--small">
+                      <input id="email" name="email" type="email" required="required">
+                    </dd>
+                  </div>
+                  <span class="post-txt">例）abc@abc.com</span>
+                </div>
+              </dl>
+              <dl class="form__row">
+                <dt>
+                  <label for="text" class="form__label">お問い合わせ内容</label>
+                </dt>
+                <div class="form__wrap form__wrap--txt">
+                  <dd class="form__input">
+                    <textarea name="text" id="text"></textarea>
+                  </dd>
+                </div>
+              </dl>
+
+            </div>
+            <div class="form__btn">
+              <button type="submit" class="form__submit btn-primary form__btn-link">送信する</button>
+            </div>
+          </form>
+
+        </div>
+      </div><!-- /*contact-container -->
+
+    </div>
+  </section>
+</main>
+{% endblock %}

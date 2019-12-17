@@ -1,0 +1,27 @@
+/*
+  ----------------
+  Font style
+  ----------------
+*/
+
+body {
+  font-family: $font-family;
+}
+
+/*
+  ----------------
+  font size
+  ----------------
+*/
+
+.top-ttl {
+  font-size: 4.5rem;
+}
+.sub-ttl {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.mini-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+}
