@@ -34,14 +34,14 @@ import newer from 'gulp-newer';
 // Custom paths
 //-----------------------
 
-// var wp_themename = '';
+var wp_themename = 'portfolio';
 
 const paths = {
 
   styles: {
     src: 'app/assets/scss/**/*.scss',
     dest: 'dist/assets/css',
-    // wp: 'wp/wp-content/themes/'+wp_themename+'/assets/css'
+    wp: 'wp/app/public/wp-content/themes/'+wp_themename+'/assets/css'
   },
 
   scripts: {
@@ -52,19 +52,19 @@ const paths = {
       'app/assets/js/main.js'
     ],
     dest: 'dist/assets/js',
-    // wp: 'wp/wp-content/themes/'+wp_themename+'/assets/js'
+    wp: 'wp/app/public/wp-content/themes/'+wp_themename+'/assets/ja'
   },
 
   images: {
     src: 'app/assets/img/**/*',
     dest: 'dist/assets/img',
-    // wp: 'wp/wp-content/themes/'+wp_themename+'/assets/img'
+    wp: 'wp/app/public/wp-content/themes/'+wp_themename+'/assets/img'
   },
 
   font: {
     src: 'app/assets/font/**/*',
     dest: 'dist/assets/font',
-    // wp: 'wp/wp-content/themes/'+wp_themename+'/assets/font'
+    // wp: 'wp/app/public/wp-content/themes/portfolio/assets/font'
   },
 
   njk: {
@@ -103,7 +103,7 @@ export function styles() {
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest(paths.styles.dest))
-    // .pipe(gulp.dest(paths.styles.wp))
+    .pipe(gulp.dest(paths.styles.wp))
 }
 
 // contact js
@@ -116,7 +116,7 @@ export function scripts() {
     .pipe(uglify())
     // .pipe(sourcemaps.write(".")) // Uncomment if you want sourcemap on JS too 
     .pipe(gulp.dest(paths.scripts.dest))
-    // .pipe(gulp.dest(paths.scripts.wp))
+    .pipe(gulp.dest(paths.scripts.wp))
 }
 
 // optimize images
@@ -126,7 +126,7 @@ export function images() {
     // .pipe(newer(paths.images.dest))
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest))
-    // .pipe(gulp.dest(paths.images.wp))
+    .pipe(gulp.dest(paths.images.wp))
 }
 
 // move fonts

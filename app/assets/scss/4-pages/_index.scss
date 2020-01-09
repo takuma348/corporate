@@ -395,17 +395,9 @@ body.home {
     &__bg {
       padding-top: 38.8888%;
       width: 100%;
-      background: url(../img/top/recruit_bg.jpg) no-repeat 50%/cover;
 
       @media #{$pc} {
       }
-
-      // @media #{$sp} {
-
-      //   &::before {
-      //     content: "";
-      //     display: block;
-      //     position: fixed;
       //     top: 0;
       //     left: 0;
       //     z-index: -1;
@@ -499,6 +491,9 @@ body.home {
     }
 
     &__text {
+      @media #{$pc} {
+        padding-left: 1em;
+      }
       @media #{$sp} {
         margin-top: 0.5em;
         line-height: 1.5em;
