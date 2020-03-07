@@ -20,17 +20,32 @@
 {% block content %}
 
 <div class="hero">
+  <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop">
+      </div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle">
+      </div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom">
+      </div>
+    </div>
+  </div>
+
   <h1 class="hero__text" data-aos="fade-in" data-aos-duration="3000">Well come to my<br class="sp-only"> portfolio</h1>
-  <div class="hero__scroll">
+  <!-- <div class="hero__scroll">
     <span class="hero__border"></span>
     <span class="hero__disc"></span>
-  </div>
+  </div> -->
 </div>
 
 <main>
 
   <section class="section top-region">
-    <div class="container"> 
+    <div class="container">
       <h2 class="section__title top-region__title" data-aos="fade-up">SERVICE</h2>
       <p class="section__title-sub" data-aos="fade-up">サービス</p>
       <p class="mb-md-4 mb-5 text-md-center" data-aos="fade-up">ここにはテキストが入ります。ここにはテキストが入ります。<br>
@@ -74,7 +89,7 @@
         </div>
       </div>
       <p class="mb-0 text-center">
-        <a href="/service/" class="btn-primary is-m">もっと見る</a>
+        <a href="/service/" ontouchstart="" class="btn-primary is-m">もっと見る</a>
       </p>
     </div>
   </section>
@@ -89,7 +104,7 @@
           <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
           </p>
           <p class="top-case__btn mb-0">
-            <a href="/performance/" class="btn-primary">詳細を見る</a>
+            <a href="/performance/" ontouchstart="" class="btn-primary">詳細を見る</a>
           </p>
         </div>
         <div class="col-md-4 top-case__item" data-aos="fade-in" data-aos-delay="150">
@@ -97,7 +112,7 @@
           <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
           </p>
           <p class="top-case__btn mb-0">
-            <a href="/performance/" class="btn-primary">詳細を見る</a>
+            <a href="/performance/" ontouchstart="" class="btn-primary">詳細を見る</a>
           </p>
         </div>
         <div class="col-md-4 top-case__item" data-aos="fade-in" data-aos-delay="300">
@@ -105,7 +120,7 @@
           <p class="top-case__text mb-md-4 mb-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
           </p>
           <p class="top-case__btn mb-0">
-            <a href="/performance/" class="btn-primary">詳細を見る</a>
+            <a href="/performance/" ontouchstart="" class="btn-primary">詳細を見る</a>
           </p>
         </div>
       </div>
@@ -122,7 +137,7 @@
           <p class="top-supplier__text mb-4" data-aos="fade-in">
             ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
           <p class="top-recruit__btn mb-0">
-            <a href="/recruit/" class="btn-primary is-bg-secondary">もっと見る</a>
+            <a href="/recruit/" ontouchstart="" class="btn-primary is-bg-secondary">もっと見る</a>
         </div>
       </div>
     </div>
@@ -163,11 +178,10 @@
         </a>
       </div>
       <p class="mb-0 text-center">
-        <a href="/news/" class="btn-primary">もっと見る</a>
+        <a href="/news/" ontouchstart="" class="btn-primary">もっと見る</a>
       </p>
     </div>
   </section>
 
 </main>
-
 {% endblock %}
