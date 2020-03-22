@@ -49,6 +49,19 @@ $(document).ready(function() {
     easing: 'ease-out-quart',
     once: true
   });
+
+  //---------------------------------
+  // Ripples
+  //---------------------------------
+  $(".hero").ripples(
+    {
+      dropRadius: 20,
+      perturbance: 0.01,
+      resolution: 256,
+      interactive: true,
+      crossOrigin: ""
+    }
+  );
 });
 
 

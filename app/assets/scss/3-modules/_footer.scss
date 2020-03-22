@@ -6,29 +6,23 @@
 
 footer.footer {
   position: relative;
+  background: $primary-color;
+  color: #fff;
 
   a {
     color: #fff;
-    
+
     @media #{$pc} {
       &:hover {
         opacity: 0.6;
       }
     }
   }
-  ul {
-    margin-bottom: 0;
-  }
 
   .container {
     @media #{$sp} {
       padding: 0 5vmin;
     }
-  }
-  
-  background: $primary-color;
-  color: #fff;
-  @media #{$pc} {
   }
 
   .goTop {
@@ -139,13 +133,14 @@ footer.footer {
 
     .footer-copy {
       opacity: 0.7;
+      text-align: center;
+
       @media #{$pc} {
         margin-top: 0.5em;
         font-size: 0.75rem;
       }
       @media #{$sp} {
         font-size: 1rem;
-        text-align: right;
       }
     }
   }
@@ -156,7 +151,7 @@ footer.footer {
 
   .home & {
     background: #fff;
-    
+
     @media #{$sp} {
       position: relative;
     }
@@ -188,7 +183,7 @@ footer.footer {
   }
 
   &__box-ttl {
-    color: #002C79;
+    color: $primary-color;
     font-size: 4rem;
     font-family: 'Open Sans',
     sans-serif;
@@ -233,7 +228,7 @@ footer.footer {
       margin-top: 2rem;
     }
 
-    
+
   }
 
   &__item-ttl {
@@ -250,6 +245,9 @@ footer.footer {
 
   &__item-link {
     width: 320px;
+    @media #{$sp} {
+      width: 100%;
+    }
     &:hover {
       opacity: 0.6;
     }
@@ -267,7 +265,7 @@ footer.footer {
 
 footer.footer.is-scrolled .goTop {
 
-  @media #{$pc} { 
+  @media #{$pc} {
     opacity: 1;
     transition: .3s;
     z-index: 10;

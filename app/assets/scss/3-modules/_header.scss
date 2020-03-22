@@ -28,7 +28,7 @@ header.header {
     width: 100%;
     min-height: $sp-header;
   }
-  
+
   .navbar-brand {
     @media #{$pc} {
       display: flex;
@@ -48,7 +48,7 @@ header.header {
       @include hoverlink;
 
       @media #{$sp} {
-        font-size: 3rem;  
+        font-size: 3rem;
       }
     }
   }
@@ -205,7 +205,7 @@ body.home header.header.is-scrolled {
     width: 100%;
     padding-top: 0;
     background-color: rgba(#fff,.9);
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid rgba(32, 141, 195, 0.25);
 
     .header-top {
       transition: .3s;

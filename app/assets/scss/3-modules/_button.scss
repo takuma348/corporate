@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     box-shadow: 0 3px;
-    color: #2884d4;
+    color: #1b64a3;
     transition: all .3s ease;
   }
   &:active::before {
@@ -44,9 +44,9 @@
     margin-top: 1rem;
 
     &:hover {
-      letter-spacing: .3em;
+      // letter-spacing: .1em;
       color: #fff;
-      // opacity: .6;
+      opacity: .8;
     }
 
   }
