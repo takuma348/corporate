@@ -64,6 +64,9 @@ $(document).ready(function() {
   );
 });
 
+$('.hero__bg').parallax({
+  imageSrc: '/assets/img/top/hero_bg.jpg'
+});
 
 
 $(document).ready(function() {
