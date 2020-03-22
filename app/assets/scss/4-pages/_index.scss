@@ -59,7 +59,7 @@ body.home {
     @media #{$pc} {
       display: flex;
       align-items: center;
-      // background: url(../img/top/hero_bg.jpg) no-repeat center / cover fixed;
+      background: url(../img/top/hero_bg.jpg) no-repeat center / cover fixed;
     }
 
     @media #{$sp} {
@@ -75,102 +75,8 @@ body.home {
         z-index:-1;
         width:100%;
         height:100vh;
-        // background: url(../img/top/hero_bg_sp.jpg) no-repeat center / cover;
+        background: url(../img/top/hero_bg.jpg) no-repeat center / cover;
       }
-    }
-
-    @keyframes move_wave {
-      0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-      }
-
-      50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-      }
-
-      100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-      }
-    }
-
-    .waveWrapper {
-      overflow: hidden;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      margin: auto;
-    }
-
-    .waveWrapperInner {
-      position: absolute;
-      width: 100%;
-      overflow: hidden;
-      height: 100%;
-      bottom: -1px;
-      background-image: linear-gradient(to top, #84e7fe 20%, #46dcff 80%);
-      padding-bottom: 100px;
-    }
-
-    .bgTop {
-      z-index: 15;
-      opacity: 0.5;
-    }
-
-    .bgMiddle {
-      z-index: 10;
-      opacity: 0.75;
-    }
-
-    .bgBottom {
-      z-index: 5;
-      // opacity: 0.25;
-    }
-
-    .wave {
-      position: absolute;
-      left: 0;
-      width: 200%;
-      height: 100%;
-      background-image: url(../img/top/wave.png);
-      background-repeat: repeat no-repeat;
-      background-position: 0 bottom;
-      transform-origin: center bottom;
-    }
-
-    .waveTop {
-      background-size: 50% 100px;
-      @media #{$sp} {
-        background-size: 50% 50px;
-      }
-    }
-
-    .waveAnimation .waveTop {
-      animation: move_wave 25s linear infinite;
-      animation-delay: 3s;
-    }
-
-    .waveMiddle {
-      background-size: 50% 120px;
-      @media #{$sp} {
-        background-size: 50% 60px;
-      }
-    }
-
-    .waveAnimation .waveMiddle {
-      animation: move_wave 10s linear infinite;
-    }
-
-    .waveBottom {
-      background-size: 50% 100px;
-      @media #{$sp} {
-        background-size: 50% 50px;
-      }
-    }
-
-    .waveAnimation .waveBottom {
-      animation: move_wave 15s linear infinite;
     }
 
     &__text {
